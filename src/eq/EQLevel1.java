@@ -75,8 +75,13 @@ public class EQLevel1 {
 				System.out.println( "Congratulations! You successfully waited and have demonstrated self-awareness, the first level of EQ." );
 				nextChoice = 0;
                                 //to proceed to next level
+                              VictoryBabyMeme VictoryBabyMemeObject = new VictoryBabyMeme();
+                              VictoryBabyMemeObject.VictoryBabyMemeGUI(); 
+                                
                               EQLevel2 EQLevel2Object = new EQLevel2();
                               EQLevel2Object.LevelDos();
+                              
+                              
 			}
                         if (nextChoice ==5)
                         {
@@ -99,8 +104,8 @@ public class EQLevel1 {
                             System.out.println();
                             nextChoice=0;
                             
-                            HanginThereCat HanginThereCatObject = new HanginThereCat();
-                            HanginThereCatObject.HanginThereCatGUI(); 
+                            HanginThereCatMeme HanginThereCatMemeObject = new HanginThereCatMeme();
+                            HanginThereCatMemeObject.HanginThereCatGUI(); 
                             
                         }
 		}

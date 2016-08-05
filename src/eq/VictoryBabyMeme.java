@@ -8,30 +8,30 @@ package eq;
 import java.awt.*;
 import javax.swing.*;
 
-
-
-public class HanginThereCatMeme extends JFrame {
-        private ImageIcon image1;
+public class VictoryBabyMeme extends JFrame {
+    private ImageIcon image1;
     private JLabel label1;
 
-public void HanginThereCatGUI() {
+public void VictoryBabyMemeGUI() {
         
-      JPanel pnl = new JPanel();
+     JPanel pnl = new JPanel();
     
         
-        image1 = new ImageIcon(getClass().getResource("hangintherecatEQ.jpg"));
+        image1 = new ImageIcon(getClass().getResource("victorybabyEQ.jpg"));
         label1 = new JLabel(image1);
         add(pnl);
         
         
   
   
-        HanginThereCatMeme gui = new HanginThereCatMeme();
+        VictoryBabyMeme gui = new VictoryBabyMeme();
         gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pnl.add(label1);
         setVisible(true);
         pack();
-        setTitle("Better Luck Next Time!");
+        setTitle("Congratulations!");
     
 }
 }
+
+

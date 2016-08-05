@@ -160,31 +160,41 @@ public class EQLevel2 {
                             System.out.println("You have not demonstrated a level of social-awareness, try again");
                             System.out.println();
                             nextChoice=0;
+                            
+                            GrumpyCatMeme  GrumpyCatMemeObject = new GrumpyCatMeme ();
+                            GrumpyCatMemeObject.GrumpyCatMemeGUI(); 
                         }
                          if ( nextChoice == 11 )
 			{
 				System.out.println( "The meeting has come to an end and everyone leaves." );
-                                System.out.println( "Do you think that went well?\"Yes\" or \"No\"");
+                                System.out.println( "Do you think that went well?\"yes\" or \"no\"");
 				System.out.println();
                                 choice = keyboard.nextLine();
 				System.out.print( "> " );
-				if ( choice.equals("Yes") )
-					nextChoice = 10;
-				else if ( choice.equals("No") )
+				if ( choice.equals("yes") )
 					nextChoice = 12;
+				else if ( choice.equals("No") )
+					nextChoice = 10;
 				else
 					System.out.println( choice + " wasn't one of the options. Try again." );
 
                              }
                          if (nextChoice== 12)
                          {
+                             System.out.println();
                              System.out.println("Ash and several others thank you for trying to handle the situation");
                              System.out.println("Brock does not talk to you for the rest of the week ");
+                             System.out.println();
                              
+                             WoodyBuzzMeme  WoodyBuzzMemeObject = new WoodyBuzzMeme ();
+                             WoodyBuzzMemeObject.WoodyBuzzMemeGUI(); 
+
                              //enter level 3
+                             EQLevel3 EQLevel3Object = new EQLevel3();
+                             EQLevel3Object.LevelTres();
                          }
 
-		System.out.println( "\n For some of you Level 3 is around the corner, otherwise keep at it." );
+		
 	}
 }
 }
